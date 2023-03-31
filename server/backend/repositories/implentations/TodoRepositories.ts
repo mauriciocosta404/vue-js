@@ -7,7 +7,7 @@ export class TodoRepositories implements ITodoRepositories{
     public count=0;
 
     async create({name,description,status}:CreateTodoDTO){
-        const todo=new Todo();
+        const todo=new Todo(name,description,status);
 
         Object.assign(todo,{
             name,

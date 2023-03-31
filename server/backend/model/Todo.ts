@@ -1,14 +1,15 @@
 import {uuid} from 'uuidv4'
 
 export class Todo{
-    private id:string;
-    private name:string;
-    private description:string; 
-    private status:string;
+    readonly id:string;
+    readonly name:string;
+    readonly description:string; 
+    readonly status:string;
 
-    constructor(){
-        if(!this.id){
-            this.id=uuid();
-        }
+    constructor(name:string,description:string,status:string){
+        this.id=uuid();
+        this.name=name;
+        this.description=description;
+        this.status=status;
     }
 }
