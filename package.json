@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "nuxt": "^3.3.2",
+    "vitest": "^0.29.8"
+  },
+  "dependencies": {
+    "uuidv4": "^6.2.13"
+  }
+}
